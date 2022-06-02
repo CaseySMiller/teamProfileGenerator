@@ -1,0 +1,59 @@
+make boilerplate for html output
+    add jumbotron
+    add manager card
+        mailto link for email
+        github profile link for engineers
+    other cards are dynamically generated: intern/engineer
+save html to a js file as string literal
+require the boilerplate js
+
+
+
+import fs
+
+set up Employee class
+    name 
+    id
+    email
+    getName()
+    getID()
+    getEmail()
+    getRole()//returns 'Employee'
+        subclass Manager
+            officeNumber
+            getRole() // overridden to return 'Manager"
+        subclass Engineer
+            github
+            getGitHub()
+            getRole() // overridden to return 'Engineer"
+        subclass Intern
+            school
+            getSchool()
+            getRole() // overridden to return 'Intern"
+add validation to classes //icebox
+
+require jest
+    set up tests for all classes in the _tests_ directory
+
+
+set up inquirer
+    write code to prompt for info
+        team manager first
+            name
+            empoyee id
+            email address
+            office number
+        prompt for add engineer, intern or finish building team
+            engineer    
+                name 
+                employee id
+                email address
+                github username
+                then back to add employee menu
+            intern
+                name
+                employee id
+                email
+                school
+                then back to menu
+            on exit the html is generated and 

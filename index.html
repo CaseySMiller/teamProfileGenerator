@@ -11,23 +11,71 @@
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <!-- local css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <title>Boilerplate</title>
+    <script src="https://kit.fontawesome.com/ca8064e232.js" crossorigin="anonymous"></script>
+    <title>My Team</title>
 </head>
 
 <body>
-    <header>
-        head
+    <header class="jumbotron jumbotron-fluid bg-danger m-2 rounded p-3">
+        <div class="container">
+            <p class="display-4 fw-bold text-white text-center">My Team</p>
+        </div>
     </header>
 
 
-    <main>
-        main
+    <main class = "container">
+        <div id = "employee-row" class = "row p-3 justify-content-center">
+
+            <div id = "manager-card" class = "card col-12 col-lg-3 m-2 p-0 shadow">
+                <div class = "card-header bg-primary text-white">
+                    <p class = "h4">Name</p>
+                    <p class = "h6"><i class="fa-solid fa-mug-hot"></i> Manager</p>
+                </div>
+                <div class = "card-body bg-light">
+                    <div class = "p-0 border rounded my-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID: 007</li>
+                            <li class="list-group-item">Email: <a href = "mailto:mail@mail.com">mail@mail.com</a></li>
+                            <li class="list-group-item">Office number: 1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id = "engineer-card" class = "card col-12 col-lg-3 m-2 p-0 shadow">
+                <div class = "card-header bg-primary text-white">
+                    <p class = "h4">Name</p>
+                    <p class = "h6"><i class="fa-solid fa-glasses"></i> Engineer</p>
+                </div>
+                <div class = "card-body bg-light">
+                    <div class = "p-0 border rounded my-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID: 007</li>
+                            <li class="list-group-item">Email: <a href = "mailto:mail@mail.com">mail@mail.com</a></li>
+                            <li class="list-group-item">GitHub: <a href = "https://github.com/30-seconds">30-seconds</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id = "intern-card" class = "card col-12 col-lg-3 m-2 p-0 shadow">
+                <div class = "card-header bg-primary text-white">
+                    <p class = "h4">Name</p>
+                    <p class = "h6"><i class="fa-solid fa-user-graduate"></i> Intern</p>
+                </div>
+                <div class = "card-body bg-light">
+                    <div class = "p-0 border rounded my-3">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">ID: 007</li>
+                            <li class="list-group-item">Email: <a href = "mailto:mail@mail.com">mail@mail.com</a></li>
+                            <li class="list-group-item">School: Hard Knocks University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
-
-
-    <footer>
-        foot
-    </footer>
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
